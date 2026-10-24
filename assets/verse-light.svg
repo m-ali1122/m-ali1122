@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="262" viewBox="0 0 1200 262" role="img" aria-label="Iqbal: There are other worlds beyond the stars, and other trials of love still ahead.">
+<style>
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  .rise { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+  .fade { animation: fade .8s ease-out both; }
+  .pop  { animation: pop .55s cubic-bezier(.3,1.6,.5,1) both; transform-box: fill-box; transform-origin: center; }
+  .draw { animation: draw 1.1s ease-in-out both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes pop  { from { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  .ur { font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Urdu Typesetting', 'Noto Naskh Arabic', 'Segoe UI', serif; fill: #16160f; fill-opacity: 0; stroke: #a16207; stroke-width: .9;
+        stroke-dasharray: 700; stroke-dashoffset: 700; }
+  .l1 { animation: ink 3s ease-in-out .3s forwards, fill 1.2s ease 2.6s forwards; }
+  .l2 { animation: ink 3s ease-in-out 1.5s forwards, fill 1.2s ease 3.8s forwards; }
+  @keyframes ink { to { stroke-dashoffset: 0; } }
+  @keyframes fill { to { fill-opacity: 1; stroke-opacity: 0; } }
+</style>
+<line x1="300" y1="22" x2="900" y2="22" stroke="#dddcd2" stroke-dasharray="600" stroke-dashoffset="600" class="draw"/>
+<text x="600" y="98" text-anchor="middle" direction="rtl" class="ur l1" font-size="40">ستاروں سے آگے جہاں اور بھی ہیں</text>
+<text x="600" y="168" text-anchor="middle" direction="rtl" class="ur l2" font-size="40">ابھی عشق کے امتحاں اور بھی ہیں</text>
+<text x="600" y="214" text-anchor="middle" class="sans fade" font-size="16" font-style="italic" fill="#66665a" style="animation-delay:4.40s">There are other worlds beyond the stars, and other trials of love still ahead.</text>
+<text x="600" y="240" text-anchor="middle" class="mono fade" font-size="11.5" letter-spacing="3" fill="#aeae9e" style="animation-delay:4.70s">ALLAMA IQBAL</text>
+</svg>

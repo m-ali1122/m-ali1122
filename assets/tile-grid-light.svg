@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="280" viewBox="0 0 600 280" role="img" aria-label="GridGuard, electricity-theft detection">
+<style>
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+  .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  .rise { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+  .fade { animation: fade .8s ease-out both; }
+  .pop  { animation: pop .55s cubic-bezier(.3,1.6,.5,1) both; transform-box: fill-box; transform-origin: center; }
+  .draw { animation: draw 1.1s ease-in-out both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes pop  { from { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  .flow { stroke-dasharray: 4 10; animation: flow .9s linear infinite; }
+  @keyframes flow { to { stroke-dashoffset: -14; } }
+  .alert { animation: alert 2.2s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+  @keyframes alert { 0% { opacity: .9; transform: scale(.6); } 100% { opacity: 0; transform: scale(2.4); } }
+</style>
+<defs><clipPath id="win"><rect x="330" y="26" width="244" height="228" rx="10"/></clipPath></defs>
+<rect x="1" y="1" width="598" height="278" rx="14" fill="#f7f7f2" stroke="#dddcd2"/>
+<text x="28" y="50" class="mono" font-size="11.5" letter-spacing="2" fill="#6b8f00">GRAPHS + ANOMALIES</text>
+<text x="28" y="96" class="sans" font-size="27" font-weight="650" letter-spacing="-.6" fill="#16160f">GridGuard</text>
+<text x="28" y="140" class="sans" font-size="15" fill="#66665a">Finds electricity theft by</text><text x="28" y="162" class="sans" font-size="15" fill="#66665a">following the missing energy.</text>
+<text x="28" y="252" class="mono" font-size="12" fill="#aeae9e">view repo -&gt;</text>
+<rect x="330" y="26" width="244" height="228" rx="10" fill="#ffffff" stroke="#dddcd2"/>
+<g clip-path="url(#win)">
+<text x="344" y="48" class="mono" font-size="10.5" fill="#aeae9e">in 412 kWh  /  billed 371 kWh</text>
+<rect x="346" y="96" width="28" height="28" rx="4" fill="#ffffff" stroke="#6b8f00" stroke-width="1.8"/>
+<path d="M356,104 l6,0 -4,7 6,0 -8,9 2,-7 -5,0 z" fill="#6b8f00"/>
+<line x1="374" y1="110" x2="560" y2="110" stroke="#aeae9e" stroke-width="1.5"/>
+<line x1="374" y1="110" x2="560" y2="110" stroke="#6b8f00" stroke-width="2" class="flow"/>
+<line x1="400" y1="110" x2="400" y2="166" stroke="#aeae9e"/><line x1="438" y1="110" x2="438" y2="166" stroke="#aeae9e"/><line x1="476" y1="110" x2="476" y2="166" stroke="#aeae9e"/><line x1="514" y1="110" x2="514" y2="166" stroke="#aeae9e"/><line x1="552" y1="110" x2="552" y2="166" stroke="#aeae9e"/>
+<rect x="391" y="166" width="18" height="22" rx="3" fill="#ffffff" stroke="#66665a" stroke-width="1.6"/><rect x="395" y="172" width="10" height="5" rx="1" fill="#66665a" fill-opacity=".6"/><rect x="429" y="166" width="18" height="22" rx="3" fill="#ffffff" stroke="#66665a" stroke-width="1.6"/><rect x="433" y="172" width="10" height="5" rx="1" fill="#66665a" fill-opacity=".6"/><rect x="467" y="166" width="18" height="22" rx="3" fill="#ffffff" stroke="#66665a" stroke-width="1.6"/><rect x="471" y="172" width="10" height="5" rx="1" fill="#66665a" fill-opacity=".6"/><rect x="505" y="166" width="18" height="22" rx="3" fill="#ffffff" stroke="#dc2626" stroke-width="1.6"/><rect x="509" y="172" width="10" height="5" rx="1" fill="#dc2626" fill-opacity=".6"/><rect x="543" y="166" width="18" height="22" rx="3" fill="#ffffff" stroke="#66665a" stroke-width="1.6"/><rect x="547" y="172" width="10" height="5" rx="1" fill="#66665a" fill-opacity=".6"/>
+<circle cx="514" cy="177" r="14" fill="none" stroke="#dc2626" stroke-width="1.5" class="alert"/>
+<text x="514" y="210" text-anchor="middle" class="mono" font-size="10.5" fill="#dc2626">41 kWh missing</text>
+<text x="344" y="238" class="mono" font-size="10.5" fill="#aeae9e">winner / GIKI HackSummer '26</text>
+</g>
+</svg>
